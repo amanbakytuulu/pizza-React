@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from 'react';
+import { CSSTransition, Transition } from 'react-transition-group';
+import { Route } from 'react-router-dom';
+import { Footer, Header } from './components';
+import { Cart, Home } from './pages';
+import './App.scss';
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <Header />
+      <div className="content">
+        <Route exact path="/" component={Home} />
+        <Route exact path="/cart" component={Cart} />
+      </div>
+     
+      <Footer />
     </div>
   );
 }
+
 
 export default App;

@@ -1,0 +1,12 @@
+export const SET_SORT_BY='filters/SET_SORT_BY';
+export const SET_CATEGORY='filters/SET_CATEGORY';
+export const SET_PIZZA='pizzas/SET_PIZZA';
+export const SET_LOADED="pizzas/SET_LOADED";
+export const ADD_PIZZA_CART='cart/ADD_PIZZA_CART';
+export const CLEAR_CART='cart/CLEAR_CART';
+export const REMOVE_CART_ITEM='cart/REMOVE_CART_ITEM';
+export const PLUS_CART_ITEM='cart/PLUS_CART_ITEM';
+export const MINUS_CART_ITEM='cart/MINUS_CART_ITEM';
+export const CHANGE_CATEGORY='filters/CHANGE_CATEGORY';
+export const CHANGE_SORTBY='filters/CHANGE_SORTBY';
+export const FETCH_PIZZA='pizzas/FETCH_PIZZAS';
